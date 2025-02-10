@@ -1,6 +1,7 @@
 # Print the company_name field. Find the number of taxi rides for each taxi company for November 15-16, 2017, name the resulting field trips_amount, and print it, too. Sort the results by the trips_amount field in descending order.
 
 ## SQL Query 1
+
 select
     cabs.company_name,
     count(trips.trip_id) as trips_amount
@@ -18,6 +19,7 @@ order by
     trips_amount desc;
 
 ## Result
+
 company_name	trips_amount
 Flash Cab	19558
 Taxi Affiliation Services	11422
