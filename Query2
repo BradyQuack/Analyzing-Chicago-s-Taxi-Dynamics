@@ -1,0 +1,38 @@
+# Find the number of rides for every taxi company whose name contains the words "Yellow" or "Blue" for November 1-7, 2017. Name the resulting variable trips_amount. Group the results by the company_name field.
+
+# SQL Query 2
+
+SELECT
+    cabs.company_name as company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM 
+    cabs
+INNER JOIN 
+    trips 
+ON 
+    trips.cab_id = cabs.cab_id
+WHERE 
+    CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND '2017-11-07'
+    AND cabs.company_name LIKE '%%Yellow%%'
+GROUP BY company_name
+UNION ALL
+SELECT
+    cabs.company_name as company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM 
+    cabs
+INNER JOIN 
+    trips 
+ON 
+    trips.cab_id = cabs.cab_id
+WHERE 
+    CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND '2017-11-07'
+    AND cabs.company_name LIKE '%%Blue%%'
+GROUP BY company_name;
+
+# Result
+company_name	trips_amount
+Taxi Affiliation Service Yellow	29213
+Yellow Cab	33668
+Blue Diamond	6764
+Blue Ribbon Taxi Association Inc.	17675
