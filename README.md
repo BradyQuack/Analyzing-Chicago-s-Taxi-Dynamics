@@ -2,7 +2,7 @@
 View project: [Analyzing Chicago's Taxi Dynamics]()
 ## Project Description:
 In this project, you will analyze taxi ride data in Chicago from November 2017 to extract actionable insights and test specific hypotheses regarding ride durations under varying conditions.
-## Data Description:
+## Data Description: EDA and SQL Queries
 ### Neighborhoods table: data on city neighborhoods
 name: name of the neighborhood
 
@@ -41,6 +41,7 @@ temperature: temperature when the record was taken
 
 description: brief description of weather conditions, e.g. "light rain" or "scattered clouds"
 
+## Data Description: Hypothesis Testing
 ### Taxi Company Data:
 File: /datasets/project_sql_result_01.csv contains:
 
