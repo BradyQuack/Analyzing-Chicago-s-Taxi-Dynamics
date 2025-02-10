@@ -1,5 +1,5 @@
 # Analyzing Chicago's Taxi Dynamics
-View project: [Analyzing Chicago's Taxi Dynamics]()
+View project: [Analyzing Chicago's Taxi Dynamics](https://github.com/BradyQuack/Analyzing-Chicago-s-Taxi-Dynamics/blob/main/TaxiChicago.ipynb)
 ## Project Description:
 In this project, you will analyze taxi ride data in Chicago from November 2017 to extract actionable insights and test specific hypotheses regarding ride durations under varying conditions.
 ## Data Description: EDA and SQL Queries
